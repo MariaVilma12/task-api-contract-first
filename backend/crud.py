@@ -1,4 +1,4 @@
-from app import models
+from backend import models
 from sqlalchemy.orm import Session
 
 def get_tasks(db: Session):
