@@ -1,11 +1,11 @@
 import yaml
 from fastapi import FastAPI, Depends, HTTPException
-from fastapi.openapi.models import Response
+from fastapi import Response
 from sqlalchemy.orm import Session
 
-from app.database import engine, SessionLocal
-import app.models as models
-import app.crud as crud
+from backend.database import engine, SessionLocal
+import backend.models as models
+import backend.crud as crud
 
 # Create tables
 models.Base.metadata.create_all(bind=engine)
